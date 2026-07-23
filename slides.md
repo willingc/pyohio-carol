@@ -2,7 +2,7 @@
 # try also 'default' to start simple
 theme: default
 # some information about your slides (markdown enabled)
-title: Growing a Python developer
+title: Growing as a Python developer
 
 # https://sli.dev/features/drawing
 drawings:
@@ -21,7 +21,7 @@ class: title-slide
 
 ---
 
-# Growing a Python developer
+# Growing as a Python developer
 
 *Resilience, Effort, Community*
 
@@ -32,6 +32,27 @@ PyOhio 2026 · July 25, 2026
 <!--
 Good morning. I want to share some lessons I've learned while building in Python and its community. Growing as a developer takes three core things: resilience, effort, and community
 -->
+
+---
+class: how-slide
+---
+
+<div class="how-hero">
+  <h1 class="how-q">How?</h1>
+  <p class="how-sub">Growing as a Python developer &mdash; so many questions&hellip;</p>
+</div>
+
+<div class="how-options">
+<v-clicks>
+
+<span class="how-chip">📖 Learn the language</span>
+
+<span class="how-chip">🧭 Follow a tutorial</span>
+
+<span class="how-chip how-chip--ai">🤖 Ask Claude / ChatGPT / Gemini 👀</span>
+
+</v-clicks>
+</div>
 
 ---
 layout: default
@@ -52,20 +73,6 @@ class: intro-slide
 </div>
 
 <p class="tagline">Mentor, teacher, collaborator, and friend</p>
-
----
-
-# Growing as a Python developer
-
-## How
-
-So many questions...
-
-Learn the language
-
-Follow a tutorial
-
-Ask Claude / ChatGPT / Gemini 👀
 
 ---
 layout: image-overlay
@@ -263,10 +270,28 @@ layout: two-cols
 </v-clicks>
 
 ---
+class: steps-slide
+---
 
 # Three steps to success
 
-adapting to change, opening doors, and being humble
+<div class="steps">
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-icon">🌊</div>
+    <div class="step-name">Adapting to change</div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-icon">🚪</div>
+    <div class="step-name">Opening doors</div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-icon">🙏</div>
+    <div class="step-name">Being humble</div>
+  </div>
+</div>
 
 ---
 layout: section
