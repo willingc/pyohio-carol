@@ -1,0 +1,235 @@
+/* Global slide styling, auto-loaded by Slidev */
+
+/* Warm cream background + dark text for all text slides.
+   The image-overlay layout overrides this (its image covers the slide),
+   and section/statement/fact/end layouts get the cream below too. */
+.slidev-layout {
+  background-color: #f5f1e8;
+  color: #1a1a1a;
+}
+.slidev-layout.section,
+.slidev-layout.statement,
+.slidev-layout.fact,
+.slidev-layout.end,
+.slidev-layout.intro,
+.slidev-layout.cover {
+  background-color: #f5f1e8;
+  color: #1a1a1a;
+}
+.slidev-layout.section h1,
+.slidev-layout.section h2,
+.slidev-layout.statement h1,
+.slidev-layout.statement h2,
+.slidev-layout.fact h1,
+.slidev-layout.fact h2,
+.slidev-layout.end h1,
+.slidev-layout.end h2 {
+  color: #1a1a1a;
+}
+
+/* Fallback for any plain markdown images left in two-col / normal slides:
+   scale up but never overflow. */
+.slidev-layout img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+/* ---- Title slide: solid light background, dark text ---- */
+.slidev-layout.title-slide {
+  background-color: #f5f1e8;
+  color: #1a1a1a;
+}
+/* Neutralize any cover background image/overlay so the solid color shows. */
+.slidev-layout.title-slide::before,
+.slidev-layout.title-slide::after {
+  background: none !important;
+  opacity: 0 !important;
+}
+.slidev-layout.title-slide h1,
+.slidev-layout.title-slide h2,
+.slidev-layout.title-slide p {
+  color: #1a1a1a;
+}
+.slidev-layout.title-slide h2 {
+  opacity: 0.85;
+}
+.slidev-layout.title-slide p {
+  opacity: 0.7;
+}
+
+/* ---- Intro slide: name + credential badges + tagline ---- */
+.slidev-layout.intro-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 4rem;
+}
+.slidev-layout.intro-slide h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.slidev-layout.intro-slide .badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.slidev-layout.intro-slide .badge {
+  display: inline-block;
+  padding: 0.4rem 0.95rem;
+  border: 1px solid rgba(140, 90, 40, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  color: #5a3d1f;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.slidev-layout.intro-slide .tagline {
+  margin-top: 2.25rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #1a1a1a;
+}
+
+/* ---- Full-bleed image-overlay layout ---- */
+.slidev-layout.image-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Media fills the whole slide. */
+.slidev-layout.image-overlay .image-overlay__media {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+
+.slidev-layout.image-overlay .image-overlay__img {
+  flex: 1 1 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Per-slide framing: shift which part of the cover image is visible.
+   A smaller x% shows more of the image's left side, moving subjects rightward. */
+.slidev-layout.image-overlay.pos-care .image-overlay__img {
+  background-position: 0% center;
+}
+
+/* Per-slide framing: zoom in and anchor toward the bottom-left to crop out
+   the walkway/house at the top and show more of the lower-left plant. */
+.slidev-layout.image-overlay.pos-nutrients .image-overlay__img {
+  background-size: 120% auto;
+  background-position: left 45%;
+}
+
+/* Per-slide framing: shift left to trim a little off the right side. */
+.slidev-layout.image-overlay.pos-dragon .image-overlay__img {
+  background-position: 35% center;
+}
+
+/* Per-slide framing: zoom in on the red fruits. */
+.slidev-layout.image-overlay.pos-fruit .image-overlay__img {
+  background-size: 135% auto;
+  background-position: center;
+}
+
+/* Two images sit side by side with a thin seam. */
+.slidev-layout.image-overlay .image-overlay__media.is-split .image-overlay__img + .image-overlay__img {
+  margin-left: 2px;
+}
+
+/* Dark gradient scrim anchored to the top for text legibility. */
+.slidev-layout.image-overlay .image-overlay__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.55) 22%,
+    rgba(0, 0, 0, 0.12) 48%,
+    rgba(0, 0, 0, 0) 68%
+  );
+  pointer-events: none;
+}
+
+/* Title/text overlay, upper-left. */
+.slidev-layout.image-overlay .image-overlay__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 2.75rem 3rem 2.5rem;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* Per-slide override: anchor the overlay block to the upper-right, but keep
+   the bullet list and its text left-aligned within that block. */
+.slidev-layout.image-overlay.overlay-right .image-overlay__content {
+  text-align: right;
+}
+.slidev-layout.image-overlay.overlay-right .image-overlay__content ul {
+  display: inline-block;
+  text-align: left;
+  margin-right: 12rem;
+}
+
+.slidev-layout.image-overlay .image-overlay__content :first-child {
+  margin-top: 0;
+}
+.slidev-layout.image-overlay .image-overlay__content :last-child {
+  margin-bottom: 0;
+}
+
+.slidev-layout.image-overlay .image-overlay__content h1,
+.slidev-layout.image-overlay .image-overlay__content h2,
+.slidev-layout.image-overlay .image-overlay__content h3 {
+  color: #fff;
+  line-height: 1.1;
+}
+
+.slidev-layout.image-overlay .image-overlay__content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.slidev-layout.image-overlay .image-overlay__content h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.slidev-layout.image-overlay .image-overlay__content h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0.92;
+}
+
+.slidev-layout.image-overlay .image-overlay__content ul {
+  margin-top: 0.6rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.slidev-layout.image-overlay .image-overlay__content a {
+  color: #fff;
+  text-decoration: underline;
+}

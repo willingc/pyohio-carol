@@ -1,0 +1,367 @@
+---
+# try also 'default' to start simple
+theme: default
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
+background: https://cover.sli.dev
+# some information about your slides (markdown enabled)
+title: Growing as a Python developer
+
+class: text-center
+# https://sli.dev/features/drawing
+drawings:
+  persist: false
+# slide transition: https://sli.dev/guide/animations.html#slide-transitions
+transition: slide-left
+# enable Comark Syntax: https://comark.dev/syntax/markdown
+comark: true
+# duration of the presentation
+duration: 35min
+# aspect ratio
+aspectRatio: 16/9
+
+---
+
+# Hi 😊 I'm Carol Willing
+
+- Python Core Team since 2017
+- 3 time Python Steering Council member
+- PSF Fellow and 2 time Board member
+- Jupyter Core Team, former Steering Council
+- ACM Software System Award, Community Service Award
+- **Mentor, teacher, collaborator, and friend**
+
+---
+
+# Growing as a Python developer
+
+## How
+
+So many questions...
+
+Learn the language
+
+Follow a tutorial
+
+Ask Claude / ChatGPT / Gemini 👀
+
+---
+layout: two-cols
+---
+
+# Thar be dragons
+
+### Are they nice dragons or do they breathe fire?
+
+Today, let's go with nice.
+
+::right::
+
+![](/Varanus_komodoensis6.jpg)
+
+<!--
+<span class="attribution"><a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> | <a href="https://commons.wikimedia.org/w/index.php?curid=529977">Link</a></span>
+-->
+
+---
+layout: two-cols
+---
+
+# Growing dragonfruits
+
+- Starts with a cutting
+- Let it form a scab
+- Wait for roots to begin
+- Plant the cutting
+
+::right::
+
+![](/dragon-toddler.jpg)
+
+---
+layout: two-cols
+---
+
+## Nutrients and water
+
+::right::
+
+![](/dragon-orchard-young.jpg)
+
+---
+layout: two-cols
+---
+
+# Care
+
+::right::
+
+![](/dragon-care-day.jpg)
+
+---
+layout: two-cols
+---
+
+## Time
+
+
+---
+layout: two-cols
+---
+
+# Starting to bloom
+
+::right::
+
+![](/dragon-flowers-prebloom.jpg)
+
+---
+layout: two-cols
+---
+
+## Blooming
+
+The process isn't finished yet.
+
+::right::
+
+![](/dragon-flower-night.jpg)
+![](/dragon-flower.jpg)
+
+---
+layout: two-cols
+---
+
+# Cross-pollinating
+
+::right::
+
+![](/dragon-pollinate-night.jpg)
+
+---
+layout: two-cols
+---
+
+## Bearing fruit
+
+Harvest for this season
+
+::right::
+
+![](/dragon-fruit.jpg)
+
+---
+layout: statement
+---
+
+## Python developers are like dragonfruits
+
+---
+layout: section
+---
+
+## How to grow as a Python developer
+
+---
+layout: two-cols
+---
+
+## Who is a Python developer?
+
+::right::
+
+**Anyone** who creates:
+
+<v-clicks>
+
+- code
+- tests
+- documentation
+- designs
+- communities
+- governance
+- translations
+- accessibility
+- events
+- and much, much more...
+
+</v-clicks>
+
+---
+layout: two-cols
+---
+
+## Today
+
+::right::
+
+Focus on the power of:
+
+- lifelong learning
+- resilience
+- community
+
+---
+
+# Three steps to success
+
+adapting to change, opening doors, and being humble
+
+---
+layout: section
+---
+
+# adapting to change
+
+---
+
+- lifelong learning
+- resilience
+- community
+
+---
+layout: two-cols
+---
+
+# 🐍 Python 🐍
+
+*What you need, when you need it*
+
+### All
+
+https://docs.python.org
+
+https://pypi.org
+
+### Intermediate
+
+https://devguide.python.org
+
+https://peps.python.org
+
+### Advanced theory
+
+https://web.mit.edu/6.001/6.037/sicp.pdf
+
+::right::
+
+# 🦉 Deconstructed 🦉
+
+<v-clicks depth='2'>
+
+1. Primitives
+   - numbers and strings
+   - built-in operations
+   - names/variables
+2. Means of combination
+   - expressions (produce a value from operations)
+   - control flow (if, loops)
+   - data structures (list, dict)
+3. Means of abstraction
+   - functions
+   - data abstraction (interface, implementation)
+   - modularity (classes, modules)
+</v-clicks>
+
+---
+
+Spectrum of ideas
+---
+layout: fact
+---
+
+# Time
+
+our most precious asset
+
+---
+layout: section
+---
+## Open doors
+
+![](/door-scroll.jpg)
+
+---
+
+- Formal programs
+- Local efforts
+- Djangonaut program
+- individual interactions
+
+---
+
+## Go beyond one-dimensional views and code
+
+---
+layout: iframe
+url: https://www.drcathicks.com/podcast
+---
+
+## Dr. Cat Hicks
+
+---
+layout: section
+---
+
+## Be humble
+
+---
+
+- look beyond snap judgments
+- empathy
+- humble data
+
+---
+layout: two-cols
+---
+
+## Anti-pattern alert: Technical and not technical
+
+::right::
+
+Code for "you are not as valuable as me" or "code writing is more important"
+
+Success skills
+
+---
+
+## Recap
+
+---
+
+## How to grow a Python developer
+
+---
+
+- Adapt to change
+- Open doors
+- Be humble
+
+---
+
+## Call to Action
+
+---
+
+## Grow your skills
+
+---
+
+## Open doors for others
+
+---
+
+## Be humble yet assertive
+
+---
+layout: iframe-right
+url: https://www.satyrn.ai
+---
+
+## We can change the world together
+
+---
+layout: end
+---
+
+# Thank you
