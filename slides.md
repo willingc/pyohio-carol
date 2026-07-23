@@ -127,7 +127,7 @@ image2: /dragon-flower-night.jpg
 class: overlay-right
 ---
 
-## Blooming
+## Full bloom
 
 The process isn't finished yet.
 
@@ -158,17 +158,24 @@ layout: default
 
 # My journey and the pedestal of doubt
 
-*Let's speed run 1995 to 2010*
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-year">1995</div>
+    <div class="timeline-text"><strong>The long break from tech.</strong> Caregiving across 3,000 miles for a mom with Alzheimer's, raising two kids, and a husband traveling 50% of the time.</div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-year">2010</div>
+    <div class="timeline-text"><strong>The return.</strong> Facing the industry myth: "You wasted your MIT degree. You lost your technical skills. You have to start at the bottom as a junior."</div>
+  </div>
+</div>
 
- 1995: The long break from tech. Caregiving across 3,000 miles for a mom with Alzheimer's, raising two kids, and a husband traveling 50% of the time.
-
-• 2007: Course series on C and C++ without formal CS degree.
-
-• 2010: The return. Facing the industry myth: "You wasted your MIT degree. You lost your technical skills. You have to start at the bottom as a junior."
-
-## The reverse pedestal
-
-Add image of someone falling off a pedestal
+<div class="pedestal-block">
+  <h2 class="pedestal-title">The reverse pedestal</h2>
+  <div class="pedestal-images">
+    <img src="/screenshots/Gemini_Generated_Image_8tnxlj8tnxlj8tnx.png" alt="Falling off the 'brightest star' pedestal" />
+    <img src="/screenshots/Gemini_Generated_Image_it1extit1extit1e.png" alt="Climbing back onto the pedestal" />
+  </div>
+</div>
 
 <!--
 In 1995, I took a long break from the tech industry. Life happened—I was raising two kids, managing a home alone half the time, and caring for my mom who was 3,000 miles away with Alzheimer's. I took some C and C++ classes in 2007 just to keep my brain moving, even though I didn't have a formal CS background. When I tried to return in 2010, people put me on a scary 'reverse pedestal'. They told me I'd wasted my degree, lost my skills, and had to start completely over from the bottom. It wasn't true."
@@ -459,7 +466,12 @@ url: https://www.satyrn.ai
 -->
 
 ---
-layout: end
+layout: cover
+class: title-slide
 ---
 
 # Thank you
+
+## Carol Willing
+
+*Resilience, Effort, Community*
