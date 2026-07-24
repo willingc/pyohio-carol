@@ -198,7 +198,7 @@ class: anchors-slide
 
 <div class="labeled-cards labeled-cards--grid">
   <div class="labeled-card">
-    <div class="labeled-card__label">🤝 Local community</div>
+    <div class="labeled-card__label">🫂 Local community</div>
     <div class="labeled-card__body">Geek in Residence at FabLab San Diego, San Diego Python and PyLadies.</div>
   </div>
   <div class="labeled-card">
@@ -328,7 +328,7 @@ class: steps-slide
   </div>
   <div class="step">
     <div class="step-num">3</div>
-    <div class="step-icon">🙏</div>
+    <div class="step-icon">🌿</div>
     <div class="step-name">Being humble</div>
   </div>
 </div>
@@ -550,17 +550,43 @@ layout: section
 
 ---
 layout: default
+class: adapt-slide
 ---
 
-## Be humble
+# Be humble
 
- Drop technical arrogance and academic jargon—it only creates friction.
+<div class="adapt-points">
+  <div class="adapt-point">
+    <span class="adapt-point__icon">💬</span>
+    <span><strong>Honest phrases</strong>
+      <span class="net-chips">
+        <span class="net-chip">I don't know</span>
+        <span class="net-chip">What do you think?</span>
+        <span class="net-chip">Yes, and …</span>
+      </span>
+    </span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">✈️</span>
+    <span><strong>The flight crew</strong> — pilots, flight attendants, and maintenance crews all own safety equally.</span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">💙</span>
+    <span><strong>Kind code reviews</strong> — focus on the code, not the person.</span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">✨</span>
+    <span><strong>Foundational courtesy</strong>
+      <span class="net-chips">
+        <span class="net-chip">Please</span>
+        <span class="net-chip">Thank you</span>
+        <span class="net-chip">I appreciate your effort</span>
+      </span>
+    </span>
+  </div>
+</div>
 
-• The best phrases: "I don't know" and "What do you think?".
-
-• The Flight Crew Metaphor: Pilots, flight attendants, and maintenance crews all own safety equally.
-
-• Kindness in Code Reviews: Focus on the code, not the person. Use foundational courtesy: "Please," "Thank you," and "I appreciate your effort."
+<p class="lead-note">Drop the arrogance and jargon — it only creates friction.</p>
 
 <!--
 "Rule three: Be humble. Technical arrogance or jargon just creates unnecessary friction. Step off the pedestal. It is incredibly powerful to say, 'I don't know,' and immediately follow it up with, 'What do you think?' Think of software like a commercial flight crew. The pilots, the flight attendants, and the maintenance team all have completely different roles, but they are all entirely critical to safety. Bring that mindset into code reviews. Keep it to the technical issue, never the person. Use simple kindness: 'Please,' 'Thank you,' and 'I appreciate your effort.'"
@@ -578,6 +604,8 @@ layout: two-cols
 
 ## Anti-pattern alert: Technical and not technical
 
+Remember the flight crew metaphor
+
 ::right::
 
 Code for "you are not as valuable as me" or "code writing is more important"
@@ -588,14 +616,13 @@ Success skills
 
 ## Recap
 
- Adapt by testing assumptions and listening to your own energy flow.
+- Adapt by testing assumptions and listening to your own energy flow.
 
-• Open doors through small, 5-minute everyday interactions.
+- Open doors and invite people in
 
-• Stay humble—value the entire operational team.
-- Yet, stay assertive
+- Be humble, yet assertive
 
-• Step completely out of your comfort zone
+- Step beyond your comfort zone
 
 <!--
 "To wrap it up: Adapt to change by experimenting, open doors for others using the power of a quick five-minute interaction, and stay humble by treating tech like a team flight crew. I challenge you today to step completely out of your comfort zone, find your community anchor, and jump in."
