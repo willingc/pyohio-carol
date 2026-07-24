@@ -436,6 +436,184 @@
   justify-content: center;
 }
 
+/* ---- "Gather courage" statement slide: big centered title + subtitle ---- */
+.slidev-layout.courage-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 4rem;
+}
+.slidev-layout.courage-slide .courage h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+  color: #403d38;
+}
+.slidev-layout.courage-slide .courage__sub {
+  margin: 1.25rem 0 0;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #8c5a28;
+  opacity: 0.85;
+}
+.slidev-layout.courage-slide .courage__sub strong {
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ---- "adapting to change" / "open doors": point cards + accents ---- */
+/* Prominent lead statement banner. */
+.slidev-layout.adapt-slide .lead-banner {
+  padding: 0.9rem 1.3rem;
+  margin-top: 1rem;
+  background: rgba(140, 90, 40, 0.1);
+  border-left: 4px solid #8c5a28;
+  border-radius: 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.35;
+}
+/* Subtle closing note (moved from a block banner to quiet text). */
+.slidev-layout.adapt-slide .lead-note {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #1a1a1a;
+  opacity: 0.6;
+  text-align: center;
+}
+/* A more prominent variant of the closing note. */
+.slidev-layout.adapt-slide .lead-note--strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #8c5a28;
+  opacity: 1;
+}
+
+/* Inline network chips inside a point card. */
+.slidev-layout.adapt-slide .net-chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.slidev-layout.adapt-slide .net-chip {
+  display: inline-block;
+  padding: 0.18rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(140, 90, 40, 0.12);
+  color: #5a3d1f;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+/* SLQAR link + acronym parts (open-doors slide). */
+.slidev-layout.adapt-slide .slqar-link,
+.slidev-layout.adapt-slide .slqar-link:hover {
+  color: #8c5a28;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: none;
+}
+.slidev-layout.adapt-slide .slqar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.slidev-layout.adapt-slide .slqar__part {
+  display: inline-block;
+  padding: 0.18rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(140, 90, 40, 0.12);
+  color: #5a3d1f;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.slidev-layout.adapt-slide .slqar__part b {
+  color: #8c5a28;
+  font-weight: 800;
+}
+.slidev-layout.adapt-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slidev-layout.adapt-slide h1 {
+  margin-bottom: 0.5rem;
+}
+.slidev-layout.adapt-slide .adapt-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.slidev-layout.adapt-slide .adapt-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(140, 90, 40, 0.18);
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 10px rgba(90, 61, 31, 0.08);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+.slidev-layout.adapt-slide .adapt-point__icon {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  flex: none;
+}
+.slidev-layout.adapt-slide .adapt-point strong {
+  color: #8c5a28;
+  font-weight: 700;
+}
+/* Energy tides — the memorable cycle, given its own emphasized strip. */
+.slidev-layout.adapt-slide .tides {
+  margin-top: 1.75rem;
+  text-align: center;
+}
+.slidev-layout.adapt-slide .tides__label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #8c5a28;
+  margin-bottom: 0.85rem;
+}
+.slidev-layout.adapt-slide .tides__cycle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+.slidev-layout.adapt-slide .tide {
+  display: inline-block;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  background: #8c5a28;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+/* Arrow separators between the tide phases, sitting in the flex gap. */
+.slidev-layout.adapt-slide .tide:not(:last-child) {
+  margin-right: 1.4rem;
+}
+.slidev-layout.adapt-slide .tide:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  margin-left: 0.5rem;
+  color: #8c5a28;
+  font-weight: 800;
+}
+
 /* Deconstructed: 3 grouped blocks revealed one at a time (slide 23 right). */
 .deconstruct-blocks {
   display: flex;

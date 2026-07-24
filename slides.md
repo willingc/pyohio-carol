@@ -404,63 +404,123 @@ class: title-left
 </div>
 
 ---
-layout: fact
----
-
-# Time
-
-our most precious asset
-
----
 layout: default
+class: adapt-slide
 ---
 
 # adapting to change
 
-• Failure and change are baseline rules in software systems.
+<div class="adapt-points">
+  <div class="adapt-point" v-click>
+    <span class="adapt-point__icon">🔁</span>
+    <span>Failure and change are <strong>baseline rules</strong> in software systems.</span>
+  </div>
+  <div class="adapt-point" v-click>
+    <span class="adapt-point__icon">🧪</span>
+    <span>Move past technical myths — rely on continuous <strong>experimentation and exploration</strong>.</span>
+  </div>
+  <div class="adapt-point" v-click>
+    <span class="adapt-point__icon">🤔</span>
+    <span>An expert saying it — or a fancy system — <strong>doesn't make it correct</strong> or capture the full problem.</span>
+  </div>
+</div>
 
-• Move past technical myths—rely on continuous experimentation and exploration.
-
-• Just because an expert says it or built a fancy system doesn't mean it's correct or captures the full problem.
-
-• Follow the tides of your personal energy: Ebb, Rest, Flow, Recharge.
+<div class="tides" v-click>
+  <div class="tides__label">Follow the tides of your personal energy</div>
+  <div class="tides__cycle">
+    <span class="tide">🌙 Ebb</span>
+    <span class="tide">😴 Rest</span>
+    <span class="tide">🌊 Flow</span>
+    <span class="tide">⚡ Recharge</span>
+  </div>
+</div>
 
 <!--
 "Rule one: Adapt to change. Change is a constant in software systems. Forget the technical myths—focus on experimentation and active exploration. And remember: just because an expert says it or builds a fancy system doesn't mean it's correct or captures the ground-reality of the problem. Gather information, make your own rules, and test the system yourself. Lastly, manage your own system latency. Follow the tides of your energy. Allow yourself the ebb and the rest so you can hit the flow state and truly recharge."
 -->
 
 ---
-layout: section
+layout: fact
 ---
 
-## Open doors
+# Time
 
-![](/door-scroll.jpg)
+is precious
+
+---
+layout: image-overlay
+image: /door-scroll.jpg
+---
+
+# Open doors
+
+### and invite people in
 
 ---
 layout: default
+class: adapt-slide
 ---
 
-## open doors
+# open a door
 
- Stop gatekeeping—even the well-meaning kind that knocks down beginners.
+<div class="adapt-points">
+  <div class="adapt-point">
+    <span class="adapt-point__icon">🌐</span>
+    <span><strong>Grow networks and impact</strong>
+      <span class="net-chips">
+        <span class="net-chip">PyLadies</span>
+        <span class="net-chip">Black Python Devs</span>
+        <span class="net-chip">Djangonauts</span>
+        <span class="net-chip">PyOhio</span>
+      </span>
+    </span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">🧺</span>
+    <span><strong>Have a picnic</strong> — a brilliant woman in Argentina who thought she was "just a junior DevOps dev," now on the PyCon Charlas stage.</span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">🌱</span>
+    <span><strong>Encourage gently</strong> — be a <a href="https://speakerdeck.com/willingc/be-a-slqar-micromentoring-for-all" class="slqar-link">SLQAR</a>:
+      <span class="slqar">
+        <span class="slqar__part"><b>S</b>how up</span>
+        <span class="slqar__part"><b>L</b>isten</span>
+        <span class="slqar__part"><b>Q</b>uestion</span>
+        <span class="slqar__part"><b>A</b>ct</span>
+        <span class="slqar__part"><b>R</b>echarge</span>
+      </span>
+    </span>
+  </div>
+</div>
 
-• Leverage networks: PyLadies, Black Python Devs, Djangonauts.
-
-• The Picnic Story: Meeting a brilliant woman in Argentina who thought she was "just a junior DevOps dev," and helping her get to the PyCon Charlas stage.
-
-• The Power of 5 Minutes: Level up those around you so everyone can do more creative, challenging work.
+<p class="lead-note">Stop gatekeeping</p>
 
 <!--
 "Rule two: Open doors. We have to stop gatekeeping, even the well-meaning kind that accidentally slams doors on beginners. Use networks like PyLadies, Black Python Devs, and Djangonauts to knock down stronger doors. I remember meeting a young woman at a picnic in Argentina. She told me she was 'just a junior DevOps dev,' but she knew an absolute ton about Kubernetes. We talked, encouraged her, and a year or two later she was on stage giving a talk at the PyCon Charlas track. Level up the people around you. It’s not about being self-serving; it's about making the space better so everyone can do more creative, challenging work."
 -->
 
 ---
+class: adapt-slide
+---
 
-- Formal programs
-- Local efforts
-- Djangonaut program
-- individual interactions
+# Make the room accessible
+
+<div class="adapt-points">
+  <div class="adapt-point">
+    <span class="adapt-point__icon">📋</span>
+    <span><strong>Formal program</strong> — Djangonaut Space</span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">📍</span>
+    <span><strong>Local gatherings</strong> — regional conferences and user groups</span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">🍵</span>
+    <span><strong>Conversation</strong> — have tea. Chat.</span>
+  </div>
+</div>
+
+<p class="lead-note lead-note--strong">Create a safe space</p>
 
 ---
 
@@ -472,6 +532,15 @@ url: https://www.drcathicks.com/podcast
 ---
 
 ## Dr. Cat Hicks
+
+---
+class: courage-slide
+---
+
+<div class="courage">
+  <h1>Gather courage and enter the room</h1>
+  <p class="courage__sub">when <strong>you</strong> feel ready</p>
+</div>
 
 ---
 layout: section
