@@ -189,17 +189,31 @@ In 1995, I took a long break from the tech industry. Life happened—I was raisi
 -->
 ---
 layout: default
+class: anchors-slide
 ---
 
 # Community Anchors & The Power of 5 Minutes
 
- 2011: Geek in Residence at FabLab San Diego (wearables, CAD, 3D printing).
+<div class="era-badge">2011 – 2014</div>
 
-• 2012–2013: AdaCamp, meeting Shauna Gordon McKeon, joining PyCon program committee via Jessica McKellar.
-
-• Micro-Mentorship: Adrian Holovaty and Jacob Kaplan-Moss spending 30 minutes to review a poster. Contributing to Requests (JSON posting).
-
-• The Turning Point: Fernando Perez asking: "What do you think?"
+<div class="labeled-cards labeled-cards--grid">
+  <div class="labeled-card">
+    <div class="labeled-card__label">🤝 Local community</div>
+    <div class="labeled-card__body">Geek in Residence at FabLab San Diego, San Diego Python and PyLadies.</div>
+  </div>
+  <div class="labeled-card">
+    <div class="labeled-card__label">✉️ Invitation</div>
+    <div class="labeled-card__body">AdaCamp, Shauna Gordon McKeon (OpenHatch / Django), Jessica McKellar (PyCon).</div>
+  </div>
+  <div class="labeled-card">
+    <div class="labeled-card__label">🌟 Micro-Mentorship</div>
+    <div class="labeled-card__body">Adrian Holovaty and Jacob Kaplan-Moss (PyCon Poster). Contributing to the Requests library (POST for JSON).</div>
+  </div>
+  <div class="labeled-card labeled-card--highlight">
+    <div class="labeled-card__label">💡 The Turning Point</div>
+    <div class="labeled-card__body">Fernando Perez, IPython and Jupyter, asking: <em>"What do you think?"</em></div>
+  </div>
+</div>
 
 <!--
 "Things changed when I found community anchors. I started helping people fabricate their dreams at FabLab San Diego. Then I hit AdaCamp and met Shauna Gordon McKeon—that's where the serious Python adventure began. Jessica McKellar asked me to join the PyCon program committee. When I was terrified to show a poster, Adrian Holovaty and Jacob Kaplan-Moss sat with me for 30 minutes to look at it. Someone took the time to help me add JSON posting to Requests. The magic moment was Fernando Perez asking me, 'What do you think?' That simple question pulled me straight into Jupyter."
@@ -208,15 +222,29 @@ layout: default
 
 ---
 layout: default
+class: gardening-slide
 ---
 
 # Moving from Learning to Gardening
 
-• The Stage: Rehearsing with Selena Deckelman; asking a core dev to stand on stage until the slide of my son playing trombone in his bathrobe appeared.
+<div class="era-badge">2014 – Present</div>
 
-• The Milestones: CPython Core Developer (2017), ACM Software System Award (2019), White House recognition.
+<div class="labeled-cards">
+  <div class="labeled-card">
+    <div class="labeled-card__label">🎤 The Stage</div>
+    <div class="labeled-card__body">My first PyCon talk — rehearsing with Selena Deckelman; asking a core dev to stand on stage with me.</div>
+  </div>
+  <div class="labeled-card">
+    <div class="labeled-card__label">🏆 The Milestones</div>
+    <div class="labeled-card__body">CPython Core Developer (2017), ACM Software System Award (2019), White House recognition (2014 FabLab, 2024 Project Jupyter).</div>
+  </div>
+  <div class="labeled-card">
+    <div class="labeled-card__label">🌱 The Gentle Code Garden</div>
+    <div class="labeled-card__body">San Diego Python Study Group, JupyterHub / Binder code and docs, CPython humane leadership, PyOpenSci outreach.</div>
+  </div>
+</div>
 
-• The Gentle Code Garden: San Diego Python Study Group, JupyterHub/Binder docs, and starting papermill.
+<p class="motto">Learn. Build. Share. — <em>Openly</em></p>
 
 <!--
 "I was so nervous giving my first PyCon talk that Selena Deckelman had to help me rehearse. I literally asked a core dev to stand on stage and hold my hand until I hit the slide showing my young son playing trombone outside on our patio in his bathrobe. Eventually, I became the second woman core developer for CPython, and our team won the ACM Software System Award. But my real work shifted to becoming a gardener. I wanted to build a Gentle Code Garden where people could learn, build, and share openly without fear."
@@ -224,15 +252,28 @@ layout: default
 
 ---
 layout: default
+class: reality-slide
 ---
 
-# The Modern Reality (a distributed system)
+# The Modern Reality <span class="subtitle-tag">a distributed system</span>
 
-• Unpredictability is a constant.
-
-• Information moves instantly and at an immense scale.
-
-• Software mirrors human systems: race conditions, latency, and shifting timelines
+<div class="concept-cards">
+  <div class="concept-card">
+    <div class="concept-card__icon">🎲</div>
+    <div class="concept-card__title">Unpredictability</div>
+    <div class="concept-card__body">is a constant.</div>
+  </div>
+  <div class="concept-card">
+    <div class="concept-card__icon">🌐</div>
+    <div class="concept-card__title">Immense scale</div>
+    <div class="concept-card__body">Information moves instantly, everywhere at once.</div>
+  </div>
+  <div class="concept-card">
+    <div class="concept-card__icon">⚙️</div>
+    <div class="concept-card__title">Complex system mirrors us</div>
+    <div class="concept-card__body">Race conditions, latency, and shifting timelines.</div>
+  </div>
+</div>
 
 <!--
 "Today's world feels chaotic and unpredictable. The real shift isn't change itself—it's that we move information around the globe instantaneously at a massive scale. Software engineering mirrors distributed computing. We are constantly dealing with race conditions, latency, and changing timelines. Because of this, I have three simple rules: Adapt to change, Open doors, and Be humble."
@@ -246,28 +287,27 @@ layout: section
 
 ---
 layout: two-cols
+class: who-slide
 ---
 
 ## Who is a Python developer?
 
+<p class="who-lead"><strong>Anyone</strong> who creates&hellip;</p>
+
 ::right::
 
-**Anyone** who creates:
-
-<v-clicks>
-
-- code
-- tests
-- documentation
-- designs
-- communities
-- governance
-- translations
-- accessibility
-- events
-- and much, much more...
-
-</v-clicks>
+<div class="who-tags" v-click>
+  <span class="who-tag">code</span>
+  <span class="who-tag">tests</span>
+  <span class="who-tag">documentation</span>
+  <span class="who-tag">designs</span>
+  <span class="who-tag">communities</span>
+  <span class="who-tag">governance</span>
+  <span class="who-tag">translations</span>
+  <span class="who-tag">accessibility</span>
+  <span class="who-tag">events</span>
+  <span class="who-tag who-tag--more">&amp; much, much more…</span>
+</div>
 
 ---
 class: steps-slide
@@ -300,6 +340,78 @@ layout: section
 # adapting to change
 
 ---
+layout: two-cols
+class: title-left
+---
+
+# 🐍 Python 🐍
+
+*What you need, when you need it*
+
+::right::
+
+<div class="resource-groups">
+  <div class="resource-group">
+    <div class="resource-group__label">All</div>
+    <a href="https://docs.python.org">docs.python.org</a>
+    <a href="https://pypi.org">pypi.org</a>
+  </div>
+  <div class="resource-group">
+    <div class="resource-group__label">Intermediate</div>
+    <a href="https://devguide.python.org">devguide.python.org</a>
+    <a href="https://peps.python.org">peps.python.org</a>
+  </div>
+  <div class="resource-group">
+    <div class="resource-group__label">Advanced theory</div>
+    <a href="https://web.mit.edu/6.001/6.037/sicp.pdf">SICP <span class="resource-note">(MIT 6.001)</span></a>
+  </div>
+</div>
+
+---
+layout: two-cols
+class: title-left
+---
+
+<h1 class="owl-title"><span class="owl">🦉</span>Deconstructed<span class="owl">🦉</span></h1>
+
+::right::
+
+<div class="deconstruct-blocks">
+  <div class="deconstruct-block" v-click>
+    <div class="deconstruct-block__label"><span class="deconstruct-block__num">1</span> Primitives</div>
+    <ul>
+      <li>numbers and strings</li>
+      <li>built-in operations</li>
+      <li>names / variables</li>
+    </ul>
+  </div>
+  <div class="deconstruct-block" v-click>
+    <div class="deconstruct-block__label"><span class="deconstruct-block__num">2</span> Means of combination</div>
+    <ul>
+      <li>expressions (produce a value from operations)</li>
+      <li>control flow (if, loops)</li>
+      <li>data structures (list, dict)</li>
+    </ul>
+  </div>
+  <div class="deconstruct-block" v-click>
+    <div class="deconstruct-block__label"><span class="deconstruct-block__num">3</span> Means of abstraction</div>
+    <ul>
+      <li>functions</li>
+      <li>data abstraction (interface, implementation)</li>
+      <li>modularity (classes, modules)</li>
+    </ul>
+  </div>
+</div>
+
+---
+layout: fact
+---
+
+# Time
+
+our most precious asset
+
+---
 layout: default
 ---
 
@@ -316,58 +428,6 @@ layout: default
 <!--
 "Rule one: Adapt to change. Change is a constant in software systems. Forget the technical myths—focus on experimentation and active exploration. And remember: just because an expert says it or builds a fancy system doesn't mean it's correct or captures the ground-reality of the problem. Gather information, make your own rules, and test the system yourself. Lastly, manage your own system latency. Follow the tides of your energy. Allow yourself the ebb and the rest so you can hit the flow state and truly recharge."
 -->
-
----
-layout: two-cols
----
-
-# 🐍 Python 🐍
-
-*What you need, when you need it*
-
-### All
-
-https://docs.python.org
-
-https://pypi.org
-
-### Intermediate
-
-https://devguide.python.org
-
-https://peps.python.org
-
-### Advanced theory
-
-https://web.mit.edu/6.001/6.037/sicp.pdf
-
-::right::
-
-# 🦉 Deconstructed 🦉
-
-<v-clicks depth='2'>
-
-1. Primitives
-   - numbers and strings
-   - built-in operations
-   - names/variables
-2. Means of combination
-   - expressions (produce a value from operations)
-   - control flow (if, loops)
-   - data structures (list, dict)
-3. Means of abstraction
-   - functions
-   - data abstraction (interface, implementation)
-   - modularity (classes, modules)
-</v-clicks>
-
----
-layout: fact
----
-
-# Time
-
-our most precious asset
 
 ---
 layout: section

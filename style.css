@@ -249,6 +249,279 @@
   line-height: 1.25;
 }
 
+/* ---- Shared: era badge + section subtitle tag ---- */
+.slidev-layout .era-badge {
+  display: inline-block;
+  padding: 0.28rem 0.9rem;
+  border-radius: 999px;
+  background: #8c5a28;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.25rem;
+}
+.slidev-layout .subtitle-tag {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #8c5a28;
+  opacity: 0.9;
+}
+.slidev-layout .subtitle-tag::before {
+  content: "— ";
+}
+
+/* ---- Labeled cards: row (default) and 2x2 grid variants ---- */
+.slidev-layout .labeled-cards {
+  display: flex;
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 0.25rem;
+}
+.slidev-layout .labeled-cards--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+/* Highlighted card — the emotional beat, given a warm fill. */
+.slidev-layout .labeled-card--highlight {
+  background: rgba(140, 90, 40, 0.1);
+  border-color: rgba(140, 90, 40, 0.35);
+}
+.slidev-layout .labeled-card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 1.1rem 1.25rem 1.2rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(140, 90, 40, 0.22);
+  border-top: 3px solid #8c5a28;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(90, 61, 31, 0.1);
+}
+.slidev-layout .labeled-card__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #8c5a28;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.slidev-layout .labeled-card__body {
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: #1a1a1a;
+}
+.slidev-layout.gardening-slide .motto {
+  text-align: center;
+  margin-top: 1.75rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #8c5a28;
+  letter-spacing: 0.01em;
+}
+.slidev-layout.gardening-slide .motto em {
+  font-style: italic;
+}
+
+/* ---- "The Modern Reality": three distributed-system concept cards ---- */
+.slidev-layout.reality-slide .concept-cards {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+.slidev-layout .concept-card {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+  padding: 2rem 1.4rem 1.75rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(140, 90, 40, 0.22);
+  border-radius: 0.9rem;
+  box-shadow: 0 6px 18px rgba(90, 61, 31, 0.12);
+}
+.slidev-layout .concept-card__icon {
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-bottom: 0.9rem;
+}
+.slidev-layout .concept-card__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #8c5a28;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.slidev-layout .concept-card__body {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+/* ---- "Who is a Python developer?": lead question + tag cloud ----
+   NOTE: in the two-cols layout, the frontmatter `class` is applied to BOTH
+   column wrappers (.col-left / .col-right), NOT to the .slidev-layout root.
+   So these selectors target `.who-slide` directly, not `.slidev-layout.who-slide`. */
+.who-slide.col-left,
+.who-slide.col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.who-slide .who-lead {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+  margin-top: 0.75rem;
+}
+.who-slide .who-lead strong {
+  color: #8c5a28;
+  font-weight: 800;
+}
+.who-slide .who-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 0.7rem;
+}
+.who-slide .who-tag {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid rgba(140, 90, 40, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #5a3d1f;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.2;
+  box-shadow: 0 2px 8px rgba(90, 61, 31, 0.08);
+}
+.who-slide .who-tag--more {
+  background: #8c5a28;
+  color: #fff;
+  border-color: #8c5a28;
+  font-style: italic;
+}
+
+/* ---- two-cols with centered title on the left, content on the right ----
+   (frontmatter `class` lands on both columns in two-cols; target directly) */
+.title-left.col-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 1.5rem;
+}
+.title-left.col-left h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 0;
+}
+/* Owls stacked above and below the title word. */
+.title-left.col-left .owl-title .owl {
+  display: block;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+.title-left.col-left em {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  opacity: 0.75;
+}
+.title-left.col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Deconstructed: 3 grouped blocks revealed one at a time (slide 23 right). */
+.deconstruct-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.deconstruct-block {
+  padding: 0.75rem 1.1rem 0.85rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(140, 90, 40, 0.18);
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 10px rgba(90, 61, 31, 0.08);
+}
+.deconstruct-block__label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #8c5a28;
+  margin-bottom: 0.35rem;
+}
+.deconstruct-block__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  flex: none;
+  border-radius: 999px;
+  background: #8c5a28;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+.deconstruct-block ul {
+  margin: 0;
+  padding-left: 1.4rem;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+/* Resource tiers as cohesive grouped cards (slide 22 right column). */
+.resource-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.resource-group {
+  position: relative;
+  padding: 0.85rem 1.1rem 0.9rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(140, 90, 40, 0.18);
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 10px rgba(90, 61, 31, 0.08);
+}
+.resource-group__label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8c5a28;
+  margin-bottom: 0.35rem;
+}
+/* Slidev's base style gives links a dashed bottom border (not text-decoration);
+   override the border, not just text-decoration. */
+.resource-group a,
+.resource-group a:hover {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: none;
+  line-height: 1.5;
+}
+.resource-group a:hover {
+  color: #8c5a28;
+}
+.resource-group .resource-note {
+  font-weight: 400;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
 /* ---- Journey slide: two year cards side by side, read as a timeline ---- */
 .slidev-layout .timeline {
   display: flex;
