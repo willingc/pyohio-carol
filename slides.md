@@ -522,16 +522,6 @@ class: adapt-slide
 
 <p class="lead-note lead-note--strong">Create a safe space</p>
 
----
-
-## Go beyond one-dimensional views and code
-
----
-layout: iframe
-url: https://www.drcathicks.com/podcast
----
-
-## Dr. Cat Hicks
 
 ---
 class: courage-slide
@@ -593,12 +583,6 @@ class: adapt-slide
 -->
 
 ---
-
-- look beyond snap judgments
-- empathy
-- humble data
-
----
 layout: two-cols
 ---
 
@@ -611,6 +595,15 @@ Remember the flight crew metaphor
 Code for "you are not as valuable as me" or "code writing is more important"
 
 Success skills
+
+---
+layout: iframe-right
+url: https://www.drcathicks.com/podcast
+---
+
+## Go beyond one-dimensional views and code
+
+**Dr. Cat Hicks** — research on developer thriving, belonging, and learning cultures.
 
 ---
 
