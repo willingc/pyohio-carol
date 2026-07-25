@@ -249,6 +249,196 @@
   line-height: 1.25;
 }
 
+/* ---- Step card on section breaks: shows which of the 3 steps we're entering ---- */
+.slidev-layout.section .step-card {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+  margin-top: 2.4rem;
+  padding: 2.4rem 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(140, 90, 40, 0.22);
+  border-top: 3px solid #8c5a28;
+  border-radius: 0.9rem;
+  box-shadow: 0 6px 18px rgba(90, 61, 31, 0.12);
+}
+.slidev-layout.section .step-card .step-num {
+  position: absolute;
+  top: -1.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #8c5a28;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  box-shadow: 0 3px 10px rgba(90, 61, 31, 0.3);
+}
+.slidev-layout.section .step-card .step-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+.slidev-layout.section .step-card .step-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+/* Light-on-dark step card for the image-overlay section break (Open doors). */
+.slidev-layout.image-overlay .step-card {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+  margin-top: 2.2rem;
+  padding: 2.2rem 2.5rem 1.8rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-top: 3px solid #fff;
+  border-radius: 0.9rem;
+  backdrop-filter: blur(4px);
+  text-shadow: none;
+}
+.slidev-layout.image-overlay .step-card .step-num {
+  position: absolute;
+  top: -1.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #fff;
+  color: #8c5a28;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+.slidev-layout.image-overlay .step-card .step-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+.slidev-layout.image-overlay .step-card .step-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* Cat Hicks slide: cream backdrop behind the contained screenshot + link style.
+   `backgroundSize: contain` in the slide frontmatter shows the whole image. */
+.grid:has(.cathicks-slide) > div:last-child {
+  background-color: #f5f1e8;
+}
+.cathicks-slide .cathicks-link {
+  margin-top: 1.4rem;
+}
+.cathicks-slide .cathicks-link a {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Subtitle under the "How I grew" title (former title, kept as a thread). */
+.slidev-layout.anchors-slide .anchors-sub {
+  margin: -0.4rem 0 0.6rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8c5a28;
+}
+
+/* Keep the satyrn.ai subtitle on one line at a smaller size. */
+.slidev-layout.satyrn-slide h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-top: 0.2rem;
+}
+
+/* ---- People collage: tiles cross-fade in and out continuously ---- */
+.slidev-layout.people-collage-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+.people-collage-slide .collage-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1.4rem;
+  color: #1a1a1a;
+}
+.people-collage {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.9rem;
+  width: 100%;
+  max-width: 60rem;
+}
+.collage-tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border: 1px solid rgba(140, 90, 40, 0.22);
+  box-shadow: 0 6px 16px rgba(90, 61, 31, 0.12);
+  /* warm placeholder fill, cycled by hue via --i so tiles read distinctly */
+  background: hsl(calc(28 + var(--i) * 12), 45%, 72%);
+  /* each tile fades in and out on a staggered loop */
+  animation: collage-fade 6s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.5s);
+}
+.collage-tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collage-tile .tile-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(26, 26, 26, 0.72);
+}
+/* Hide the placeholder label once a real image has loaded over it. */
+.collage-tile img:not([style*="display: none"]) + .tile-label,
+.collage-tile img:not([style*="display:none"]) + .tile-label {
+  display: none;
+}
+@keyframes collage-fade {
+  0%, 100% { opacity: 0.15; transform: scale(0.97); }
+  50%      { opacity: 1;    transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .collage-tile { animation: none; opacity: 1; }
+}
+.collage-caption {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #8c5a28;
+}
+
 /* ---- Shared: era badge + section subtitle tag ---- */
 .slidev-layout .era-badge {
   display: inline-block;

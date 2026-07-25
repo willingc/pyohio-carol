@@ -67,6 +67,8 @@ class: intro-slide
   <span class="badge">PSF Fellow</span>
   <span class="badge">2× PSF Board member</span>
   <span class="badge">Jupyter Core Team</span>
+  <span class="badge">pyOpenSci team</span>
+  <span class="badge">napari core team</span>
   <span class="badge">ACM Software System Award</span>
   <span class="badge">PSF Community Service Award</span>
   <span class="badge">PSF Frank Willison Award</span>
@@ -163,7 +165,7 @@ layout: statement
 layout: default
 ---
 
-# My journey and the pedestal of doubt
+# Life happens
 
 <div class="timeline">
   <div class="timeline-item">
@@ -192,7 +194,9 @@ layout: default
 class: anchors-slide
 ---
 
-# Community Anchors & The Power of 5 Minutes
+# How I grew as a Python developer
+
+<p class="anchors-sub">Community anchors &amp; the power of 5 minutes</p>
 
 <div class="era-badge">2011 – 2014</div>
 
@@ -207,7 +211,7 @@ class: anchors-slide
   </div>
   <div class="labeled-card">
     <div class="labeled-card__label">🌟 Micro-Mentorship</div>
-    <div class="labeled-card__body">Adrian Holovaty and Jacob Kaplan-Moss (PyCon Poster). Contributing to the Requests library (POST for JSON).</div>
+    <div class="labeled-card__body">Adrian Holovaty and Jacob Kaplan-Moss (PyCon Poster). Mentored by Ian Cordasco on contributing to the Requests library (POST for JSON).</div>
   </div>
   <div class="labeled-card labeled-card--highlight">
     <div class="labeled-card__label">💡 The Turning Point</div>
@@ -225,7 +229,7 @@ layout: default
 class: gardening-slide
 ---
 
-# Moving from Learning to Gardening
+# I became a gardener
 
 <div class="era-badge">2014 – Present</div>
 
@@ -249,6 +253,13 @@ class: gardening-slide
 <!--
 "I was so nervous giving my first PyCon talk that Selena Deckelman had to help me rehearse. I literally asked a core dev to stand on stage and hold my hand until I hit the slide showing my young son playing trombone outside on our patio in his bathrobe. Eventually, I became the second woman core developer for CPython, and our team won the ACM Software System Award. But my real work shifted to becoming a gardener. I wanted to build a Gentle Code Garden where people could learn, build, and share openly without fear."
 -->
+
+
+---
+layout: section
+---
+
+## So how do you grow as a Python developer?
 
 ---
 layout: default
@@ -280,19 +291,13 @@ class: reality-slide
 -->
 
 ---
-layout: section
----
-
-## How to grow as a Python developer
-
----
 layout: two-cols
 class: who-slide
 ---
 
 ## Who is a Python developer?
 
-<p class="who-lead"><strong>Anyone</strong> who creates&hellip;</p>
+<p class="who-lead"><strong>Anyone</strong> who creates or improves&hellip;</p>
 
 ::right::
 
@@ -319,17 +324,17 @@ class: steps-slide
   <div class="step">
     <div class="step-num">1</div>
     <div class="step-icon">🌊</div>
-    <div class="step-name">Adapting to change</div>
+    <div class="step-name">Adapt to change</div>
   </div>
   <div class="step">
     <div class="step-num">2</div>
     <div class="step-icon">🚪</div>
-    <div class="step-name">Opening doors</div>
+    <div class="step-name">Open doors</div>
   </div>
   <div class="step">
     <div class="step-num">3</div>
     <div class="step-icon">🌿</div>
-    <div class="step-name">Being humble</div>
+    <div class="step-name">Be humble</div>
   </div>
 </div>
 
@@ -337,7 +342,11 @@ class: steps-slide
 layout: section
 ---
 
-# adapting to change
+<div class="step-card">
+  <span class="step-num">1</span>
+  <span class="step-icon">🌊</span>
+  <span class="step-name">Adapt to change</span>
+</div>
 
 ---
 layout: two-cols
@@ -408,7 +417,7 @@ layout: default
 class: adapt-slide
 ---
 
-# adapting to change
+# Adaptation nuggets of wisdom
 
 <div class="adapt-points">
   <div class="adapt-point" v-click>
@@ -452,19 +461,21 @@ layout: image-overlay
 image: /door-scroll.jpg
 ---
 
-# Open doors
-
-### and invite people in
+<div class="step-card">
+  <span class="step-num">2</span>
+  <span class="step-icon">🚪</span>
+  <span class="step-name">Open doors</span>
+</div>
 
 ---
 layout: default
 class: adapt-slide
 ---
 
-# open a door
-
+# Open a door
+g
 <div class="adapt-points">
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">🌐</span>
     <span><strong>Grow networks and impact</strong>
       <span class="net-chips">
@@ -475,11 +486,11 @@ class: adapt-slide
       </span>
     </span>
   </div>
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">🧺</span>
     <span><strong>Have a picnic</strong> — a brilliant woman in Argentina who thought she was "just a junior DevOps dev," now on the PyCon Charlas stage.</span>
   </div>
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">🌱</span>
     <span><strong>Encourage gently</strong> — be a <a href="https://speakerdeck.com/willingc/be-a-slqar-micromentoring-for-all" class="slqar-link">SLQAR</a>:
       <span class="slqar">
@@ -506,15 +517,15 @@ class: adapt-slide
 # Make the room accessible
 
 <div class="adapt-points">
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">📋</span>
-    <span><strong>Formal program</strong> — Djangonaut Space</span>
+    <span><strong>Formal program</strong> — Djangonaut Space, DjangoGirls, HumbleData</span>
   </div>
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">📍</span>
-    <span><strong>Local gatherings</strong> — regional conferences and user groups</span>
+    <span><strong>Local (and virtual) gatherings</strong> — regional conferences and user groups</span>
   </div>
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">🍵</span>
     <span><strong>Conversation</strong> — have tea. Chat.</span>
   </div>
@@ -536,17 +547,21 @@ class: courage-slide
 layout: section
 ---
 
-## Be humble
+<div class="step-card">
+  <span class="step-num">3</span>
+  <span class="step-icon">🌿</span>
+  <span class="step-name">Be humble</span>
+</div>
 
 ---
 layout: default
 class: adapt-slide
 ---
 
-# Be humble
+# Humility in practice
 
 <div class="adapt-points">
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">💬</span>
     <span><strong>Honest phrases</strong>
       <span class="net-chips">
@@ -556,15 +571,15 @@ class: adapt-slide
       </span>
     </span>
   </div>
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">✈️</span>
     <span><strong>The flight crew</strong> — pilots, flight attendants, and maintenance crews all own safety equally.</span>
   </div>
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">💙</span>
     <span><strong>Kind code reviews</strong> — focus on the code, not the person.</span>
   </div>
-  <div class="adapt-point">
+  <div class="adapt-point" v-click>
     <span class="adapt-point__icon">✨</span>
     <span><strong>Foundational courtesy</strong>
       <span class="net-chips">
@@ -583,33 +598,49 @@ class: adapt-slide
 -->
 
 ---
-layout: two-cols
+layout: default
+class: adapt-slide
 ---
 
-## Anti-pattern alert: Technical and not technical
+# Anti-pattern alert: "Technical" vs. "not technical"
 
-Remember the flight crew metaphor
-
-::right::
-
-Code for "you are not as valuable as me" or "code writing is more important"
-
-Success skills
-
----
-layout: iframe-right
-url: https://www.drcathicks.com/podcast
----
-
-## Go beyond one-dimensional views and code
-
-**Dr. Cat Hicks** — research on developer thriving, belonging, and learning cultures.
+<div class="adapt-points">
+  <div class="adapt-point">
+    <span class="adapt-point__icon">🚫</span>
+    <span>Signals <strong>"you are not as valuable as me"</strong> — or that <strong>writing code matters more</strong> than everything else.</span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">✈️</span>
+    <span>Remember the <strong>flight crew metaphor</strong> — every role owns the outcome.</span>
+  </div>
+  <div class="adapt-point">
+    <span class="adapt-point__icon">🌟</span>
+    <span><strong>Success skills</strong> are technical skills too.</span>
+  </div>
+</div>
 
 ---
+layout: image-right
+image: /screenshots/cathicks-site.png
+backgroundSize: contain
+class: cathicks-slide
+---
 
-## Recap
+## Built by people, for people
 
-- Adapt by testing assumptions and listening to your own energy flow.
+**Dr. Cat Hicks** studies the human side of engineering — psychological safety, belonging, and how teams actually learn.
+
+<p class="cathicks-link"><a href="https://www.drcathicks.com/">drcathicks.com</a></p>
+
+---
+
+## Growing as a Python developer
+
+### Enjoy your journey
+
+<v-clicks>
+
+- Adapt by testing assumptions and listening to your own energy flow
 
 - Open doors and invite people in
 
@@ -617,22 +648,58 @@ url: https://www.drcathicks.com/podcast
 
 - Step beyond your comfort zone
 
+</v-clicks>
+
 <!--
 "To wrap it up: Adapt to change by experimenting, open doors for others using the power of a quick five-minute interaction, and stay humble by treating tech like a team flight crew. I challenge you today to step completely out of your comfort zone, find your community anchor, and jump in."
 -->
 
 ---
-layout: iframe-right
-url: https://www.satyrn.ai
+layout: default
+class: people-collage-slide
 ---
 
-## We can change the world together
+<h2 class="collage-title">Our people</h2>
+
+<div class="people-collage">
+  <div class="collage-tile" style="--i: 0"><span class="tile-label">You</span></div>
+  <div class="collage-tile" style="--i: 1"><span class="tile-label">A mentor</span></div>
+  <div class="collage-tile" style="--i: 2"><span class="tile-label">A friend</span></div>
+  <div class="collage-tile" style="--i: 3"><span class="tile-label">A maintainer</span></div>
+  <div class="collage-tile" style="--i: 4"><span class="tile-label">A beginner</span></div>
+  <div class="collage-tile" style="--i: 5"><span class="tile-label">An organizer</span></div>
+  <div class="collage-tile" style="--i: 6"><span class="tile-label">A speaker</span></div>
+  <div class="collage-tile" style="--i: 7"><span class="tile-label">A teacher</span></div>
+  <div class="collage-tile" style="--i: 8"><span class="tile-label">A contributor</span></div>
+  <div class="collage-tile" style="--i: 9"><span class="tile-label">A newcomer</span></div>
+  <div class="collage-tile" style="--i: 10"><span class="tile-label">A gardener</span></div>
+  <div class="collage-tile" style="--i: 11"><span class="tile-label">A community</span></div>
+</div>
+
+<p class="collage-caption">We grow together</p>
+
+<!--
+Placeholder tiles. To use real photos, drop portraits into public/people/
+(e.g. person-01.jpg) and replace a tile's <span class="tile-label"> with
+<img src="/people/person-01.jpg" alt="" />. Slidev resolves image paths at
+build time, so the file must exist before referencing it.
+-->
+
+---
+layout: iframe-right
+url: https://www.satyrn.ai
+class: satyrn-slide
+---
+
+## satyrn.ai
+
+### We can change the world together
 
 • Dream big.
 
 • Hope starts with your immediate, daily choices.
 
-• Write impactful code and change your little corner of the world.
+• Change your little corner of the world.
 
 
 <!--
