@@ -34,6 +34,48 @@ Good morning. I want to share some lessons I've learned while building in Python
 -->
 
 ---
+layout: default
+class: spoiler-slide
+---
+
+<div class="spoiler-content">
+
+# Spoiler Alert
+
+<p class="spoiler-body">I am so sorry that I am losing my voice.</p>
+
+<p class="spoiler-body">This talk is a tribute to the amazing individuals in the Python community. Everyone, inclusive of beginners to experts, has unique gifts. I hope my voice lasts and that you leave inspired and empowered to grow yourself and others as Python developers.</p>
+
+</div>
+
+<style>
+.spoiler-slide.slidev-layout {
+  background: linear-gradient(135deg, #0f2a1f 0%, #163d2c 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spoiler-slide .spoiler-content {
+  max-width: 46rem;
+  text-align: center;
+}
+
+.spoiler-slide h1 {
+  color: #ffd54a;
+  margin-bottom: 1.5rem;
+}
+
+.spoiler-slide .spoiler-body {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+</style>
+
+---
 class: how-slide
 ---
 
@@ -75,6 +117,23 @@ class: intro-slide
 </div>
 
 <p class="tagline">Mentor, teacher, collaborator, and friend</p>
+
+---
+layout: center
+class: gentlecode-slide
+---
+
+<img src="/gentlecode.png" class="gentlecode-img" />
+
+<style>
+.gentlecode-img {
+  max-width: 90%;
+  max-height: 85vh;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
+</style>
 
 ---
 layout: image-overlay
@@ -223,6 +282,146 @@ class: anchors-slide
 "Things changed when I found community anchors. I started helping people fabricate their dreams at FabLab San Diego. Then I hit AdaCamp and met Shauna Gordon McKeon—that's where the serious Python adventure began. Jessica McKellar asked me to join the PyCon program committee. When I was terrified to show a poster, Adrian Holovaty and Jacob Kaplan-Moss sat with me for 30 minutes to look at it. Someone took the time to help me add JSON posting to Requests. The magic moment was Fernando Perez asking me, 'What do you think?' That simple question pulled me straight into Jupyter."
 
 -->
+
+---
+layout: default
+class: collage-slide
+---
+
+<div class="collage collage--4">
+  <img src="/people/sd-about.png" class="collage-img" />
+  <img src="/people/sd-intro-python.png" class="collage-img" />
+  <img src="/people/sd-study-group.png" class="collage-img" />
+  <img src="/people/sd-workshop.png" class="collage-img" />
+</div>
+
+<style>
+.collage-slide.slidev-layout {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.collage-slide .collage {
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  min-height: 0;
+  max-height: 100%;
+}
+
+.collage-slide .collage--4 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* High specificity to beat the global `.slidev-layout img` rule */
+.collage-slide .collage img.collage-img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+</style>
+
+---
+layout: default
+class: collage-slide
+---
+
+<div class="collage collage--2">
+  <img src="/people/beginner-markerfaire.png" class="collage-img" />
+  <img src="/people/beginner-fablab.png" class="collage-img" />
+</div>
+
+<style>
+.collage-slide.slidev-layout {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.collage-slide .collage {
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  min-height: 0;
+  max-height: 100%;
+}
+
+.collage-slide .collage--2 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* High specificity to beat the global `.slidev-layout img` rule */
+.collage-slide .collage img.collage-img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+</style>
+
+---
+layout: default
+class: collage-slide
+---
+
+<div class="collage collage--2">
+  <img src="/people/beginner-carol.png" class="collage-img collage-img--quote" />
+  <img src="/people/margot-mentor.png" class="collage-img collage-img--quote" />
+</div>
+
+<style>
+.collage-slide.slidev-layout {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.collage-slide .collage {
+  flex: 1;
+  display: grid;
+  gap: 2rem;
+  min-height: 0;
+  max-height: 100%;
+}
+
+.collage-slide .collage--2 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+/* High specificity to beat the global `.slidev-layout img` rule */
+.collage-slide .collage img.collage-img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Quotes are text on white — no shadow, let them breathe */
+.collage-slide .collage img.collage-img--quote {
+  box-shadow: none;
+}
+</style>
 
 ---
 layout: default
@@ -473,7 +672,7 @@ class: adapt-slide
 ---
 
 # Open a door
-g
+
 <div class="adapt-points">
   <div class="adapt-point" v-click>
     <span class="adapt-point__icon">🌐</span>
@@ -633,6 +832,33 @@ class: cathicks-slide
 <p class="cathicks-link"><a href="https://www.drcathicks.com/">drcathicks.com</a></p>
 
 ---
+layout: image-right
+image: /screenshots/scamper.png
+backgroundSize: contain
+class: scamper-slide
+---
+
+# Your growth journey may be challenging
+
+<p class="scamper-sub">and unpredictable at times</p>
+
+<p class="scamper-text">What to do? Just <strong>SCAMPER</strong>.</p>
+
+<style>
+.scamper-slide .scamper-sub {
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: 0.85;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+
+.scamper-slide .scamper-text {
+  font-size: 1.6rem;
+}
+</style>
+
+---
 
 ## Growing as a Python developer
 
@@ -686,14 +912,18 @@ build time, so the file must exist before referencing it.
 -->
 
 ---
-layout: iframe-right
+layout: default
 url: https://www.satyrn.ai
 class: satyrn-slide
 ---
 
-## satyrn.ai
+<div class="satyrn-grid">
 
-### We can change the world together
+  <div class="satyrn-left">
+
+# We can change the world together
+
+<div class="satyrn-points">
 
 • Dream big.
 
@@ -701,6 +931,63 @@ class: satyrn-slide
 
 • Change your little corner of the world.
 
+</div>
+
+<p class="satyrn-label" v-click>satyrn.ai</p>
+
+  </div>
+
+  <div class="satyrn-right" v-click>
+    <iframe class="satyrn-frame" src="https://www.satyrn.ai"></iframe>
+  </div>
+
+</div>
+
+<style>
+.satyrn-slide.slidev-layout {
+  padding: 0;
+}
+
+.satyrn-slide .satyrn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.satyrn-slide .satyrn-left {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.satyrn-slide h1 {
+  margin-bottom: 1.5rem;
+}
+
+.satyrn-slide .satyrn-points {
+  font-size: 1.25rem;
+  line-height: 1.9;
+}
+
+.satyrn-slide .satyrn-label {
+  margin-top: auto;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.satyrn-slide .satyrn-right {
+  height: 100%;
+}
+
+.satyrn-slide .satyrn-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
 
 <!--
 "Dream big. Hope and progress start right now with your own choices. Write impactful code, stay curious, and change your little corner of the world. The technology landscape might not always be perfect, but the people dedicated to building it definitely make this journey worth it. Thank you."
@@ -716,3 +1003,5 @@ class: title-slide
 ## Carol Willing
 
 *Resilience, Effort, Community*
+
+<p class="slides-link">Slides: <a href="https://speakerdeck.com/willingc">https://speakerdeck.com/willingc</a></p>
